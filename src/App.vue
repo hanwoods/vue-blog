@@ -1,16 +1,19 @@
 <template>
   <div id="app">
     <PageTitle msg="Basic Vue Blog"/>
+    <Navigation/>
   </div>
 </template>
 
 <script>
 import PageTitle from './components/PageTitle.vue'
+import Navigation from './components/Navigation.vue'
 
 export default {
   name: 'app',
   components: {
-    PageTitle
+    PageTitle,
+    Navigation
   }
 }
 </script>
@@ -21,7 +24,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #413C58;
   margin-top: 60px;
 }
 </style>
