@@ -1,9 +1,11 @@
 <template>
     <div id="blog-post">
-      <h3>{{title}}</h3>
-      <div class='content'>
+        <div>
+          <h3>{{title}}</h3>
+        </div>
+        <div class='content'>
           {{content}}
-      </div>
+        </div>
     </div>
 </template>
 
@@ -18,6 +20,7 @@ export default {
 </script>
 
 <style>
+
 h3 {
   float: left;
 }

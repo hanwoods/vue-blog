@@ -1,12 +1,38 @@
 <template>
-    <h1>{{ msg }}</h1>
+  <div> 
+    <v-layout row wrap name-text>
+      <v-flex xs12>
+        <vue-typer text='Hannah Woods' preTypeDelay="1000" :repeat="0"></vue-typer>
+      </v-flex>
+    </v-layout>
+    <v-layout row wrap tag-line>
+      <v-flex xs12>
+        <vue-typer text='Software Developer, Vancouver BC.' preTypeDelay="3000" :repeat="0"></vue-typer>
+      </v-flex>
+    </v-layout>
+  </div>
 </template>
 
 <script>
+import { VueTyper } from 'vue-typer'
+
 export default {
   name: 'PageTitle',
-  props: {
-    msg: String
+  components: {
+    VueTyper
   }
 }
 </script>
+
+<style>
+.name-text {
+  font-size: 70px;
+  font-weight: bold;
+  padding-top: 300px;
+}
+
+.tag-line {
+  font-size: 30px;
+}
+</style>
+
