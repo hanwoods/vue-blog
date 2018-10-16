@@ -1,5 +1,5 @@
 <template>
-  <div> 
+  <v-container> 
     <v-layout row wrap name-text>
       <v-flex xs12>
         <vue-typer text='Hannah Woods' preTypeDelay="1000" :repeat="0"></vue-typer>
@@ -10,7 +10,7 @@
         <vue-typer text='Software Developer, Vancouver BC.' preTypeDelay="3000" :repeat="0"></vue-typer>
       </v-flex>
     </v-layout>
-  </div>
+  </v-container>
 </template>
 
 <script>

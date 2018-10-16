@@ -1,10 +1,8 @@
 <template>
   <div id="app">
     <v-app>
-      <v-container>
         <PageTitle/>
         <Navigation/>
-      </v-container>
     </v-app>
   </div>
 </template>

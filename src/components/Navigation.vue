@@ -1,11 +1,17 @@
 <template>
-    <div>
-        <ul>
-            <li><a class="active" href="#projects">Blog</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#about">About</a></li>
-        </ul>
-    </div>
+    <v-container>
+        <v-layout row wrap>
+            <v-flex xs1>
+                    <a href="#about">About</a>
+            </v-flex>
+            <v-flex xs1>
+                    <a href="#projects">Projects</a>
+            </v-flex>
+            <v-flex xs1>
+                    <a href="#contact">Contact</a>
+            </v-flex>
+        </v-layout>
+    </v-container>
 </template>
 
 <script>
@@ -15,22 +21,5 @@ export default {
 </script>
 
 <style>
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
 
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: #C1B098;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
 </style>
